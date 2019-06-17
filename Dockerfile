@@ -9,6 +9,6 @@ LABEL "repository"="https://github.com/lgeiger/pyflakes-action"
 LABEL "homepage"="https://github.com/lgeiger/pyflakes-action"
 LABEL "maintainer"="Lukas Geiger <lukas.geiger94@gmail.com>"
 
-RUN pip install pyflakes
+RUN pip install flake8
 
-CMD ["pyflakes", "."]
+CMD ["flake8", "."]
